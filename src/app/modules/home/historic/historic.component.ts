@@ -80,14 +80,16 @@ export class HistoricComponent {
 
   previousSlide() {
     if (this.itemsContainer) {
-      this.itemsContainer.nativeElement.scrollBy({ left: -200, behavior: 'smooth' });
+      this.itemsContainer.nativeElement.scrollBy({ left: -210, behavior: 'smooth' });
     }
   }
   
   nextSlide() {
     if (this.itemsContainer) {
-      this.itemsContainer.nativeElement.scrollBy({ left: 200, behavior: 'smooth' });
+      this.itemsContainer.nativeElement.scrollBy({ left: 210, behavior: 'smooth' });
     }
   }
+  
+  
 }
 

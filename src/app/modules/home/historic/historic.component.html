@@ -1,8 +1,8 @@
 <div class="historic">
   <div class="lines">
     <h2>Inspirado pelo seu histórico de navegação</h2>
+    <button class="arrow left" (click)="previousSlide()">&#10094;</button>
     <div class="carousel-container">
-      <button class="arrow left" (click)="previousSlide()">&#10094;</button>
       <div class="items" #itemsContainer>
         <div class="item" *ngFor="let item of items">
           <img [src]="item.image" [alt]="item.title">
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <button class="arrow right" (click)="nextSlide()">&#10095;</button>
     </div>
+    <button class="arrow right" (click)="nextSlide()">&#10095;</button>
   </div>
 </div>

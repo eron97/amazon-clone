@@ -1,5 +1,5 @@
 .historic {
-  position: relative; /* Adicionado para posicionamento das setas */
+  position: relative;
   width: 100%;
   margin-top: 14px;
   padding-top: 30px;
@@ -7,12 +7,12 @@
   background-color: #fff;
 
   .lines {
-    border-top: 1px solid rgb(224, 224, 224);   /* Borda superior */
-    border-bottom: 1px solid rgb(224, 224, 224); /* Borda inferior */
-    border-right: 1px solid rgb(224, 224, 224);/* Borda direita */
+    border-top: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    border-right: 1px solid rgb(224, 224, 224);
     border-left: none;
-    padding: 30px; 
-    padding-bottom: 70px;             /* Sem borda esquerda */
+    padding: 30px;
+    padding-bottom: 70px;
   }
 
   h2 {
@@ -21,23 +21,22 @@
   }
 
   .carousel-container {
-    width: 100%;
-    padding-left: 150px;
-    padding-right: 150px;
     position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
   }
 
   .items {
-    width: 100%; /* Ajuste conforme necessário */
     display: flex;
-    overflow-x: hidden; /* Esconde os itens fora da área visível */
-    scroll-behavior: smooth;
+    overflow: hidden; /* Esconde itens que não cabem no contêiner */
   }
 
   .item {
     min-width: 200px;
+    margin-right: 10px; /* Espaço entre itens */
     border-radius: 8px;
     text-align: left;
     display: flex;
@@ -66,7 +65,7 @@
       align-items: center;
 
       .full-star, .half-star {
-        color: #ffa500; /* Cor laranja para estrelas */
+        color: #ffa500;
         font-size: 20px;
         margin-bottom: 6px;
       }
@@ -85,7 +84,7 @@
     }
 
     .price sup {
-      font-size: 9px; /* Tamanho do símbolo da moeda */
+      font-size: 9px;
     }
 
     .shipping {
@@ -97,11 +96,12 @@
 
   .arrow {
     position: absolute;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 1.3rem;
     background: none;
-    border: 1px solid #6d6d6d; /* Adiciona uma borda preta fina */
-    border-radius: 0.50rem; /* Adiciona cantos arredondados */
+    border: 1px solid #6d6d6d;
+    border-radius: 0.50rem;
     cursor: pointer;
     color: #6d6d6d;
     z-index: 1000;
@@ -110,14 +110,13 @@
     padding-top: 2px;
     padding-bottom: 6px;
   }
-  
 
   .arrow.left {
-    left: 60px;
+    left: 100px; /* Aumentar esse valor para mover a seta mais para a esquerda */
   }
 
   .arrow.right {
-    right: 60px;
+    right: 100px; /* Aumentar esse valor para mover a seta mais para a direita */
   }
 
   .arrow:hover {
