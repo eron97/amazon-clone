@@ -1,0 +1,28 @@
+<div class="historic">
+  <div class="lines">
+    <h2>Inspirado pelo seu histórico de navegação</h2>
+    <div class="carousel-container">
+      <button class="arrow left" (click)="previousSlide()">&#10094;</button>
+      <div class="items" #itemsContainer>
+        <div class="item" *ngFor="let item of items">
+          <img [src]="item.image" [alt]="item.title">
+          <div class="item-details">
+            <p class="title">{{ item.title }}</p>
+            <div class="star-rating">
+              <ng-container *ngFor="let star of [1, 2, 3, 4, 5]; let i = index">
+                <span *ngIf="i < item.rating; else halfStar" class="full-star">★</span>
+                <ng-template #halfStar>
+                  <span *ngIf="i < item.rating + 0.5" class="half-star">★</span>
+                </ng-template>
+              </ng-container>
+              <span class="reviews">{{ item.reviews }}</span>
+            </div>
+            <p class="price"><sup>R$ </sup>{{ item.price }}</p>
+            <p class="shipping" [innerHTML]="item.shippingInfo"></p>
+          </div>
+        </div>
+      </div>
+      <button class="arrow right" (click)="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+</div>

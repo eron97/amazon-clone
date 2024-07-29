@@ -1,0 +1,16 @@
+<div class="best-sellers-games">
+  <div class="container-best-sellers">
+    <h2>Mais Vendidos em Games e Consoles</h2>
+    <div class="carousel-wrapper">
+      <button class="prev" (click)="slide(-1)">&#10094;</button>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div *ngFor="let game of games" class="item">
+            <img [src]="game.image" [alt]="game.name">
+          </div>
+        </div>
+      </div>
+      <button class="next" (click)="slide(1)">&#10095;</button>
+    </div>
+  </div>
+</div>

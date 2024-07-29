@@ -1,0 +1,211 @@
+.sessions {
+  width: 80%;
+  margin: 0px auto; /* Centraliza a seção na página */
+  justify-content: center;
+  position: relative;
+}
+
+.session-one{
+    margin-top: -365px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .card {
+    width: 350px;
+    height: 400px;
+    margin: 0 auto; /* Centraliza a seção na página */
+    background-color: white;
+    padding: 5px; /* Adiciona algum espaço interno para melhor visualização */
+    overflow: hidden; /* Garante que o conteúdo não vaze do card */
+  }
+  
+  .card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #1c334b
+  }
+  
+  .container-offers {
+    padding: 5px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  
+  .container-offers img {
+    width: 95%;
+    padding-left: 10px;
+    margin-bottom: 9px;
+  }
+  
+  .container-missions {
+    padding: 5px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  
+  .container-missions img {
+    width: 95%;
+    padding-left: 10px;
+    margin-bottom: 9px;
+  }
+  
+  .container-s1-one {
+    margin-top: -10px;
+    margin-bottom: 18px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; /* Espaçamento entre as imagens */
+  }
+  
+  .container-s1-one span {
+    text-align: left; /* Alinha o texto da descrição à esquerda */
+    font-size: 13px; /* Ajusta o tamanho da fonte da descrição */
+    text-decoration: none; /* Remove a sublinhado do texto da descrição */
+  }
+  
+  .container-s1-one a {
+    text-decoration: none; /* Remove a sublinhado do link */
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+  
+  .container-s1-one img {
+    width: 70%; /* Garante que as imagens ocupem a largura completa da célula */
+    height: auto; /* Mantém a proporção das imagens */
+    margin-bottom: 3px;
+  }
+  
+  .container-s1-one a img {
+    align-self: center; /* Centraliza a imagem verticalmente na célula */
+  }
+  
+  .container-s1-one a span {
+    margin-top: 5px; /* Espaçamento entre a imagem e o texto */
+    height: 1.5em; /* Altura mínima para as descrições */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-s2-one {
+    margin-top: -10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; /* Espaçamento entre as imagens */
+    height: auto;
+  }
+  
+  .container-s2-one span {
+    text-align: left; /* Alinha o texto da descrição à esquerda */
+    font-size: 13px; /* Ajusta o tamanho da fonte da descrição */
+    text-decoration: none; /* Remove a sublinhado do texto da descrição */
+    margin-bottom: 14px;
+  }
+  
+  .container-s2-one a {
+    text-decoration: none; /* Remove a sublinhado do link */
+    color: inherit; /* Mantém a cor do texto */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  }
+  
+  .container-s2-one img {
+    width: 100%; /* Garante que as imagens ocupem a largura completa da célula */
+    height: auto; /* Mantém a proporção das imagens */
+    margin-bottom: 3px;
+  }
+  
+  
+  .container-s2-one a img {
+    align-self: center; /* Centraliza a imagem verticalmente na célula */
+  }
+  
+  .container-s2-one a span {
+    margin-top: 5px; /* Espaçamento entre a imagem e o texto */
+    height: 1.5em; /* Altura mínima para as descrições */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .link {
+    font-size: 12px;
+    font-weight: bold;
+    color: #4684c7; /* Cor do texto */
+    text-align: left; /* Centraliza o texto horizontalmente */
+    margin-left: 15px;
+    cursor: pointer; /* Indica que o texto é clicável */
+  }
+  
+  
+  
+  .link:hover {
+    text-decoration: none; /* Efeito ao passar o mouse */
+  }
+  
+  
+  
+  .session-two {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .card-prime {
+    width: 740px;
+    height: 410px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden; /* Garante que o conteúdo não vaze do card */
+  }
+  
+  .container-prime {
+    position: relative; /* Define o contexto para o posicionamento absoluto */
+  }
+  
+  .img-wrapper {
+    position: relative;
+  }
+  
+  .img-wrapper img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  .img-wrapper span {
+    position: absolute;
+    bottom: 22px; /* Coloca o texto a 10px da margem inferior da imagem */
+    color: white; /* Cor do texto */
+    font-size: 14px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0) 35%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0) 20%);
+  }
+  
+  .overlay h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .overlay p {
+    margin-top: 5px;
+  }

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-categories',
+  templateUrl: './categories.component.html',
+  styleUrls: ['./categories.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class CategoriesComponent implements OnInit {
   categories = [
     { name: 'Cozinha', image: 'assets/cat1.jpg' },
     { name: 'Brinquedos e Jogos', image: 'assets/cat2.jpg' },
@@ -13,9 +13,12 @@ export class HomeComponent implements OnInit {
     { name: 'Papelaria e Escritório', image: 'assets/cat4.jpg' },
     { name: 'Alimentos e Bebidas', image: 'assets/cat5.jpg' },
     { name: 'Eletrônicos', image: 'assets/cat6.jpg' },
-    { name: 'Ferramentas e Construção', image: 'assets/cat7.jpg' }
-    // Adicione mais categorias conforme necessário
+    { name: 'Ferramentas e Construção', image: 'assets/cat7.jpg' },
+    { name: 'y', image: 'assets/cat8.jpg' },
+    { name: 'z', image: 'assets/cat9.jpg' },
+    { name: 'zz', image: 'assets/cat10.jpg' }
   ];
+
   currentIndex = 0;
 
   constructor() { }

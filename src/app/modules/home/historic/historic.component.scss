@@ -1,0 +1,126 @@
+.historic {
+  position: relative; /* Adicionado para posicionamento das setas */
+  width: 100%;
+  margin-top: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+
+  .lines {
+    border-top: 1px solid rgb(224, 224, 224);   /* Borda superior */
+    border-bottom: 1px solid rgb(224, 224, 224); /* Borda inferior */
+    border-right: 1px solid rgb(224, 224, 224);/* Borda direita */
+    border-left: none;
+    padding: 30px; 
+    padding-bottom: 70px;             /* Sem borda esquerda */
+  }
+
+  h2 {
+    font-size: 15px;
+    padding-left: 100px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .items {
+    width: 100%; /* Ajuste conforme necessário */
+    display: flex;
+    overflow-x: hidden; /* Esconde os itens fora da área visível */
+    scroll-behavior: smooth;
+  }
+
+  .item {
+    min-width: 200px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item img {
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .item-details {
+    width: 100%;
+    text-align: left;
+
+    .title {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #007195;
+    }
+
+    .star-rating {
+      display: flex;
+      align-items: center;
+
+      .full-star, .half-star {
+        color: #ffa500; /* Cor laranja para estrelas */
+        font-size: 20px;
+        margin-bottom: 6px;
+      }
+
+      .reviews {
+        font-size: 12px;
+        color: #007195;
+        margin-left: 5px;
+      }
+    }
+
+    .price {
+      font-size: 18px;
+      color: #000000;
+      margin-top: -1px;
+    }
+
+    .price sup {
+      font-size: 9px; /* Tamanho do símbolo da moeda */
+    }
+
+    .shipping {
+      margin-top: -10px;
+      font-size: 12px;
+      color: #000000;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    background: none;
+    border: 1px solid #6d6d6d; /* Adiciona uma borda preta fina */
+    border-radius: 0.50rem; /* Adiciona cantos arredondados */
+    cursor: pointer;
+    color: #6d6d6d;
+    z-index: 1000;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 2px;
+    padding-bottom: 6px;
+  }
+  
+
+  .arrow.left {
+    left: 60px;
+  }
+
+  .arrow.right {
+    right: 60px;
+  }
+
+  .arrow:hover {
+    color: #007195;
+  }
+}

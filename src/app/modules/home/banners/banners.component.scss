@@ -1,0 +1,56 @@
+.banners-section {
+  width: 80%; /* Largura máxima da seção de banners */
+  margin: 0 auto; /* Centraliza a seção na página */
+  justify-content: center;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  position: relative; /* Garante que o pseudo-elemento ::after seja posicionado corretamente */
+  overflow: hidden; /* Garante que qualquer conteúdo extra seja oculto */
+}
+
+.image-container {
+  position: relative;
+}
+
+.banner img {
+  display: block;
+  width: 100%; /* Faz o banner ocupar toda a largura do contêiner */
+  margin: 0; /* Remove qualquer margem que possa estar causando uma linha */
+}
+
+.image-container::after {
+  content: ""; /* Necessário para criar o pseudo-elemento */
+  position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%; /* Ajuste conforme necessário */
+  background: linear-gradient(to top, rgba(227, 230, 230, 1) 20%, rgba(227, 230, 230, 0) 100%); /* Gradiente de #e3e6e6 para transparente */
+  pointer-events: none; /* Garante que o pseudo-elemento não interfira na interação com a imagem */
+  z-index: 1; /* Assegura que o gradiente esteja acima da imagem */
+}
+
+
+.arrow {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-80%);
+  color: white; /* Define a cor das setas como branca */
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 20px;
+  background: transparent; /* Remove qualquer fundo, tornando-o transparente */
+  z-index: 2; /* Mantém o z-index alto para garantir que as setas fiquem visíveis */
+}
+
+.left {
+  left: 30px;
+}
+
+.right {
+  right: 20px;
+}

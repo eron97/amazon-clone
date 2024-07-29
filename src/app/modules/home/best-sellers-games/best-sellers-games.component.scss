@@ -1,0 +1,79 @@
+.best-sellers-games {
+  width: 79%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  padding: 20px;
+}
+
+.container-best-sellers {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.item {
+  flex: 0 0 15%;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  margin-right: 10px; /* Adiciona espaço entre os itens */
+}
+
+.item:last-child {
+  margin-right: 0; /* Remove a margem do último item */
+}
+
+.item img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do item */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}

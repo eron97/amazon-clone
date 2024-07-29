@@ -1,0 +1,15 @@
+<div class="categories">
+  <div class="container-categorie">
+    <h2>Navegue pelas categorias, de A a Z</h2>
+    <div class="carrossel-wrapper">
+      <button class="prev" (click)="slide(-1)">&#10094;</button>
+      <div class="carrossel">
+        <div class="carrossel-inner">
+          <div *ngFor="let category of categories" class="item">
+            <img [src]="category.image" [alt]="category.name">
+          </div>
+        </div>
+      </div>
+      <button class="next" (click)="slide(1)">&#10095;</button>
+    </div>
+  </div>
